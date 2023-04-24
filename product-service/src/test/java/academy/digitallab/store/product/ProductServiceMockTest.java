@@ -25,7 +25,7 @@ public class ProductServiceMockTest {
 
 	@BeforeEach
 	public void setup() {
-		MockitoAnnotations.openMocks(this);
+		MockitoAnnotations.initMocks(this);
 		productService = new ProductServiceImpl(productRepository);
 		Product computer = Product.builder()
 				.id(1L)
